@@ -1,0 +1,174 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'AlmaLinux release 8.7 (Stone Smilodon)' is not supported on 
+  'x86_64' officially, assuming linux compatibility by default. Set 
+  VCS_ARCH_OVERRIDE to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+
+Warning-[LINX_KRNL] Unsupported Linux kernel
+  Linux kernel '4.18.0-425.3.1.el8.x86_64' is not supported.
+  Supported versions are 2.4* or 2.6*.
+
+Command: vcs /home/sohilp2/ECE_Final_Proj/mp4/pkg/rv32i_mux_types.sv /home/sohilp2/ECE_Final_Proj/mp4/pkg/rv32i_types.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/instr_fetch.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/instr_decode.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/ex_mem.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/pc.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/writeback_stage.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/WordGenerator.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/execute.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/static_nt_predictor.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/cmp.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/mem_wb.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/stall.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/forwardingunit.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/regfile.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/branch_predictior/branch_predictor.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/branch_predictior/global_branch_predictor.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/branch_predictior/local_branch_predictor.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/branch_predictior/meta_predictor.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/mem_stage.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/if_id.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/datapath.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/id_ex.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/alu.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/cacheline_adaptor.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/arbiter.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/eight_way_sa_cache/cache_datapath.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/eight_way_sa_cache/cache_control.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/eight_way_sa_cache/array.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/eight_way_sa_cache/bus_adapter.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/eight_way_sa_cache/cache.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/eight_way_sa_cache/data_array.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/4_way_cache/cache_datapath.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/4_way_cache/cache_control.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/4_way_cache/array.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/4_way_cache/bus_adapter.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/4_way_cache/cache.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/4_way_cache/data_array.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/two_way_sa_cache/cache_datapath.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/two_way_sa_cache/cache_control.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/two_way_sa_cache/array.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/two_way_sa_cache/bus_adapter.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/two_way_sa_cache/cache.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/two_way_sa_cache/data_array.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/memory_blkbox.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/given_cache/cache_datapath.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/given_cache/cache_control.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/given_cache/line_adapter.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/given_cache/array.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/given_cache/cache.sv /home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/given_cache/data_array.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/mp4.sv /home/sohilp2/ECE_Final_Proj/mp4/hvl/rvfimon.v \
+/home/sohilp2/ECE_Final_Proj/mp4/hvl/tb_itf.sv /home/sohilp2/ECE_Final_Proj/mp4/hvl/shadow_memory.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hvl/param_memory.sv /home/sohilp2/ECE_Final_Proj/mp4/hvl/rvfi_itf.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hvl/forwardingunit_TB.sv /home/sohilp2/ECE_Final_Proj/mp4/hvl/top.sv \
+/home/sohilp2/ECE_Final_Proj/mp4/hvl/source_tb.sv /home/sohilp2/ECE_Final_Proj/mp4/hvl/magic_dual_port.sv \
+-full64 -lca -sverilog +lint=all,noNS -timescale=1ns/10ps -debug_acc+all -kdb -fsdb \
+-msg_config=../warn.config -l compile.log +incdir+../pkg +incdir+../hvl -top mp4_tb \
+
+                         Chronologic VCS (TM)
+      Version R-2020.12-SP1-1_Full64 -- Fri Dec  9 15:39:06 2022
+
+                    Copyright (c) 1991 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/pkg/rv32i_mux_types.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/pkg/rv32i_types.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/instr_fetch.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/instr_decode.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/ex_mem.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/pc.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/writeback_stage.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/WordGenerator.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/execute.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/static_nt_predictor.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/cmp.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/mem_wb.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/stall.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/forwardingunit.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/regfile.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/branch_predictior/branch_predictor.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/branch_predictior/global_branch_predictor.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/branch_predictior/local_branch_predictor.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/branch_predictior/meta_predictor.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/mem_stage.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/if_id.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/datapath.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/id_ex.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/alu.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/cacheline_adaptor.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/arbiter.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/eight_way_sa_cache/cache_datapath.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/eight_way_sa_cache/cache_control.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/eight_way_sa_cache/array.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/eight_way_sa_cache/bus_adapter.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/eight_way_sa_cache/cache.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/eight_way_sa_cache/data_array.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/4_way_cache/cache_datapath.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/4_way_cache/cache_control.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/4_way_cache/array.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/4_way_cache/bus_adapter.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/4_way_cache/cache.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/4_way_cache/data_array.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/two_way_sa_cache/cache_datapath.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/two_way_sa_cache/cache_control.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/two_way_sa_cache/array.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/two_way_sa_cache/bus_adapter.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/two_way_sa_cache/cache.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/two_way_sa_cache/data_array.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/memory_blkbox.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/given_cache/cache_datapath.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/given_cache/cache_control.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/given_cache/line_adapter.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/given_cache/array.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/given_cache/cache.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/memory/given_cache/data_array.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hdl/mp4.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hvl/rvfimon.v'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hvl/tb_itf.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hvl/shadow_memory.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hvl/param_memory.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hvl/rvfi_itf.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hvl/forwardingunit_TB.sv'
+
+Warning-[TMR] Text macro redefined
+/home/sohilp2/ECE_Final_Proj/mp4/hvl/forwardingunit_TB.sv, 2
+  Text macro (FREQUENCY_MHZ) is redefined. The last definition will override 
+  previous ones.
+  Location of previous definition: 
+  /home/sohilp2/ECE_Final_Proj/mp4/hvl/tb_itf.sv, 5.
+  Previous value: 218.3 
+
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hvl/top.sv'
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hvl/source_tb.sv'
+Parsing included file '../hvl/tb_itf.sv'.
+Back to file '/home/sohilp2/ECE_Final_Proj/mp4/hvl/source_tb.sv'.
+Parsing design file '/home/sohilp2/ECE_Final_Proj/mp4/hvl/magic_dual_port.sv'
+Top Level Modules:
+       mp4_tb
+TimeScale is 1 ns / 1 ps
+
+Lint-[UI] Unused input
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/instr_fetch.sv, 9
+  Following is an unused input.
+  Source info: cmp_out_mem
+
+
+Lint-[UI] Unused input
+/home/sohilp2/ECE_Final_Proj/mp4/hdl/cpu_datapath/if_id.sv, 9
+  Following is an unused input.
+  Source info: stall_nop
+
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+
+24 modules and 0 UDP read.
+recompiling module tb_itf
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory '/home/sohilp2/ECE_Final_Proj/mp4/sim/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic --no-relax  -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o \
+
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib -L/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _2338948_archive_1.so _prev_archive_1.so \
+_cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/vcs_save_restore_new.o \
+/software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/home/sohilp2/ECE_Final_Proj/mp4/sim/csrc'
+CPU time: 1.457 seconds to compile + .434 seconds to elab + .389 seconds to link
