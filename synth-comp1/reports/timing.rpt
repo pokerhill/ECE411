@@ -1,0 +1,106 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mp4
+Version: R-2020.09-SP4
+Date   : Thu Dec  8 14:22:30 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: MEM_WB/reg_dest_out_reg[0]
+              (rising edge-triggered flip-flop clocked by my_clk)
+  Endpoint: EX_MEM/alu_val_out_reg[31]
+            (rising edge-triggered flip-flop clocked by my_clk)
+  Path Group: my_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mp4                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock my_clk (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  MEM_WB/reg_dest_out_reg[0]/CK (DFF_X1)                  0.00       0.00 r
+  MEM_WB/reg_dest_out_reg[0]/Q (DFF_X1)                   0.10       0.10 f
+  MEM_WB/reg_dest_out[0] (mem_wb)                         0.00       0.10 f
+  FWD_UNIT/rd_id_MemWb[0] (forwardingunit)                0.00       0.10 f
+  FWD_UNIT/U28/ZN (INV_X1)                                0.07       0.17 r
+  FWD_UNIT/U29/ZN (OAI22_X1)                              0.04       0.21 f
+  FWD_UNIT/U30/ZN (AOI221_X1)                             0.09       0.30 r
+  FWD_UNIT/U31/ZN (OAI221_X1)                             0.05       0.35 f
+  FWD_UNIT/U32/ZN (NOR4_X1)                               0.12       0.47 r
+  FWD_UNIT/U35/ZN (NAND2_X1)                              0.05       0.52 f
+  FWD_UNIT/U36/ZN (NAND2_X1)                              0.06       0.57 r
+  FWD_UNIT/U59/ZN (AND2_X1)                               0.05       0.62 r
+  FWD_UNIT/U3/ZN (OR2_X1)                                 0.06       0.68 r
+  FWD_UNIT/alumux2_sel[1] (forwardingunit)                0.00       0.68 r
+  EXECUTE/forwarding_alumux2_sel[1] (execute)             0.00       0.68 r
+  EXECUTE/U26/ZN (NOR3_X1)                                0.05       0.73 f
+  EXECUTE/U41/ZN (AOI22_X1)                               0.06       0.80 r
+  EXECUTE/U44/ZN (NAND4_X1)                               0.17       0.97 f
+  EXECUTE/alu/b[2] (alu)                                  0.00       0.97 f
+  EXECUTE/alu/U2/ZN (INV_X2)                              0.22       1.19 r
+  EXECUTE/alu/U1/ZN (INV_X1)                              0.12       1.32 f
+  EXECUTE/alu/U98/Z (XOR2_X1)                             0.11       1.43 f
+  EXECUTE/alu/U323/CO (FA_X1)                             0.11       1.54 f
+  EXECUTE/alu/U360/CO (FA_X1)                             0.09       1.63 f
+  EXECUTE/alu/U408/CO (FA_X1)                             0.09       1.72 f
+  EXECUTE/alu/U427/CO (FA_X1)                             0.09       1.81 f
+  EXECUTE/alu/U455/CO (FA_X1)                             0.09       1.90 f
+  EXECUTE/alu/U690/CO (FA_X1)                             0.09       1.99 f
+  EXECUTE/alu/U471/CO (FA_X1)                             0.09       2.08 f
+  EXECUTE/alu/U486/CO (FA_X1)                             0.09       2.17 f
+  EXECUTE/alu/U503/CO (FA_X1)                             0.09       2.26 f
+  EXECUTE/alu/U515/CO (FA_X1)                             0.09       2.35 f
+  EXECUTE/alu/U531/CO (FA_X1)                             0.09       2.44 f
+  EXECUTE/alu/U550/CO (FA_X1)                             0.09       2.53 f
+  EXECUTE/alu/U563/CO (FA_X1)                             0.09       2.62 f
+  EXECUTE/alu/U577/CO (FA_X1)                             0.09       2.72 f
+  EXECUTE/alu/U710/CO (FA_X1)                             0.09       2.81 f
+  EXECUTE/alu/U720/CO (FA_X1)                             0.09       2.90 f
+  EXECUTE/alu/U734/CO (FA_X1)                             0.09       2.99 f
+  EXECUTE/alu/U747/CO (FA_X1)                             0.09       3.08 f
+  EXECUTE/alu/U758/CO (FA_X1)                             0.09       3.17 f
+  EXECUTE/alu/U769/CO (FA_X1)                             0.09       3.26 f
+  EXECUTE/alu/U787/CO (FA_X1)                             0.09       3.35 f
+  EXECUTE/alu/U798/CO (FA_X1)                             0.09       3.44 f
+  EXECUTE/alu/U591/CO (FA_X1)                             0.09       3.53 f
+  EXECUTE/alu/U620/CO (FA_X1)                             0.09       3.62 f
+  EXECUTE/alu/U807/CO (FA_X1)                             0.09       3.71 f
+  EXECUTE/alu/U818/CO (FA_X1)                             0.09       3.80 f
+  EXECUTE/alu/U636/CO (FA_X1)                             0.09       3.89 f
+  EXECUTE/alu/U653/CO (FA_X1)                             0.09       3.98 f
+  EXECUTE/alu/U668/CO (FA_X1)                             0.09       4.07 f
+  EXECUTE/alu/U103/Z (XOR2_X1)                            0.07       4.14 f
+  EXECUTE/alu/U104/ZN (NAND2_X1)                          0.03       4.17 r
+  EXECUTE/alu/U190/ZN (NAND4_X1)                          0.04       4.21 f
+  EXECUTE/alu/f[31] (alu)                                 0.00       4.21 f
+  EXECUTE/alu_out[31] (execute)                           0.00       4.21 f
+  EX_MEM/alu_val_in[31] (ex_mem)                          0.00       4.21 f
+  EX_MEM/U104/ZN (AND2_X1)                                0.04       4.25 f
+  EX_MEM/alu_val_out_reg[31]/D (DFF_X1)                   0.01       4.26 f
+  data arrival time                                                  4.26
+
+  clock my_clk (rise edge)                                4.58       4.58
+  clock network delay (ideal)                             0.00       4.58
+  clock uncertainty                                      -0.10       4.48
+  EX_MEM/alu_val_out_reg[31]/CK (DFF_X1)                  0.00       4.48 r
+  library setup time                                     -0.04       4.44
+  data required time                                                 4.44
+  --------------------------------------------------------------------------
+  data required time                                                 4.44
+  data arrival time                                                 -4.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.18
+
+
+1
