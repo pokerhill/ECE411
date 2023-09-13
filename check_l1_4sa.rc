@@ -1,0 +1,158 @@
+Magic 271485
+Revision Verdi_R-2020.12-SP1-1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1920 684 237 326
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/edwinml2/ece411_final_mp/mp4/sim/dump.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 445394313.532864 446572338.625562
+cursor 447225000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 49
+; marker line index
+markerPos 79
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/edwinml2/ece411_final_mp/mp4/sim/dump.fsdb"
+addSignal -h 15 /mp4_tb/dut/clk
+addSignal -h 15 -holdScope rst
+addSignal -h 15 /mp4_tb/dut/INSTR_FETCH/pcmux_out[31:0]
+addSignal -h 15 /mp4_tb/dut/INSTR_DECODE/regfile/data[0:31]
+addSignal -h 15 /mp4_tb/dut/WB_STAGE/pc_out[31:0]
+addSignal -h 15 -UNSIGNED -holdScope opcode_in[6:0]
+addSignal -h 15 -holdScope regfilemux_out[31:0]
+addSignal -h 15 /mp4_tb/dut/EXECUTE/alu/a[31:0]
+addSignal -h 15 -holdScope b[31:0]
+addSignal -h 15 -holdScope f[31:0]
+addSignal -h 15 -UNSIGNED /mp4_tb/dut/EXECUTE/forwarding_alumux1_sel[1:0]
+addSignal -h 15 -UNSIGNED -holdScope forwarding_alumux2_sel[2:0]
+addSignal -h 15 -UNSIGNED -holdScope opcode_in[6:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/d_cache_address[31:0]
+addSubGroup "BR_PREDICTOR"
+addSignal -h 15 /mp4_tb/dut/MEM_STAGE/BR_PREDICTOR/br_en
+addSignal -h 15 -UNSIGNED -holdScope opcode[6:0]
+addSignal -h 15 -holdScope flush
+addSignal -h 15 /mp4_tb/dut/MEM_STAGE/reg_pc_in[31:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/d_cache_address[31:0]
+addSignal -h 15 -holdScope d_cache_byte_enable[3:0]
+addSignal -h 15 -holdScope d_cache_wdata[31:0]
+addSignal -h 15 -holdScope pmem_resp
+addSignal -h 15 /mp4_tb/dut/MEM_STAGE/wdata_out[31:0]
+addSignal -h 15 -holdScope alu_in[1:0]
+addSignal -h 15 -UNSIGNED -holdScope store_funct3[2:0]
+addSignal -h 15 -holdScope mem_byte_enable[3:0]
+endSubGroup "BR_PREDICTOR"
+addSignal -h 15 /mp4_tb/dut/MEM_WB/r_data_in[31:0]
+addGroup "G2"
+addSignal -h 15 /mp4_tb/dut/EXECUTE/cmp/a[31:0]
+addSignal -h 15 -holdScope b[31:0]
+addSignal -h 15 -UNSIGNED /mp4_tb/dut/EXECUTE/opcode_in[6:0]
+addSignal -h 15 -holdScope pc_reg_out[31:0]
+addSignal -h 15 /mp4_tb/dut/EXECUTE/cmp/br_en
+addSignal -h 15 -UNSIGNED /mp4_tb/dut/EXECUTE/fowarding_cmpmux1_sel[1:0]
+addSignal -h 15 -holdScope reg_data_1_in[31:0]
+addSignal -h 15 -holdScope data_from_exmem_in[31:0]
+addSignal -h 15 -holdScope data_from_memwb_in[31:0]
+addSignal -h 15 -UNSIGNED -holdScope fowarding_cmpmux2_sel[1:0]
+addSignal -h 15 -holdScope reg_data_2_in[31:0]
+addSignal -h 15 -holdScope data_from_exmem_in[31:0]
+addSignal -h 15 -holdScope data_from_memwb_in[31:0]
+addSignal -h 15 -holdScope i_imm_in[31:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/control/dirty
+addSignal -h 15 -holdScope LRU_read
+addSignal -h 15 /mp4_tb/dut/MEM_BB/d_cache_read
+addSignal -h 15 -holdScope d_cache_write
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/datapath/dirty_bit_array_way_1/data[7:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/datapath/dirty_bit_array_way_2/data[7:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/datapath/dirty_bit_array_way_3/data[7:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/datapath/dirty_bit_array_way_4/data[7:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/control/replace_which_way[1:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/d_cache_rdata[31:0]
+addSignal -h 15 -holdScope d_cache_resp
+addSignal -h 15 -holdScope d_cache_address[31:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/control/LRU_in[2:0]
+addSignal -h 15 -holdScope hit_check
+addSignal -h 15 -holdScope hit1
+addSignal -h 15 -holdScope hit2
+addSignal -h 15 -holdScope hit3
+addSignal -h 15 -holdScope hit4
+addSignal -h 15 -holdScope LRU_out[2:0]
+addSignal -h 15 -holdScope replace_which_way[1:0]
+addSignal -h 15 -UNSIGNED -holdScope curr_state[31:0]
+addSignal -h 15 -holdScope mem_resp_cache
+addSignal -h 15 /mp4_tb/dut/MEM_BB/pmem_write
+addSignal -h 15 -holdScope d_cache_address[31:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/datapath/new_address[31:0]
+addSignal -h 15 -holdScope new_address[31:0]
+addSignal -h 15 -holdScope tag_out[23:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/control/which_tag[1:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/datapath/tag_array1/data[7:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/datapath/tag_array2/data[7:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/datapath/tag_array3/data[7:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/datapath/tag_array4/data[7:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/datapath/tag_array1/rindex[2:0]
+addSignal -h 15 -holdScope windex[2:0]
+addSignal -h 15 -holdScope datain[23:0]
+addSignal -h 15 -holdScope dataout[23:0]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/D_CACHE/datapath/address[7:5]
+addSignal -h 15 -holdScope address[31:5]
+addSignal -h 15 /mp4_tb/dut/MEM_BB/d_cache_nxtlvl_addr[31:0]
+addSignal -h 15 -holdScope d_cache_nxtlvl_addr[31:0]
+addSignal -h 15 -holdScope llc_pmem_address[31:0]
+addSignal -h 15 -holdScope llc_pmem_address[31:0]
+addSignal -h 15 -holdScope pmem_address[31:0]
+addSignal -h 15 -holdScope pmem_address[31:0]
+addGroup "G3"
+addSignal -h 15 -UNSIGNED /mp4_tb/dut/EXECUTE/forwarding_alumux1_sel[1:0]
+addSignal -h 15 -UNSIGNED -holdScope opcode_in[6:0]
+addSignal -h 15 /mp4_tb/dut/EXECUTE/alu/a[31:0]
+addSignal -h 15 -holdScope b[31:0]
+addSignal -h 15 -holdScope f[31:0]
+addSignal -h 15 -UNSIGNED /mp4_tb/dut/EXECUTE/forwarding_alumux2_sel[2:0]
+addSignal -h 15 -holdScope i_imm_in[31:0]
+addSignal -h 15 -holdScope u_imm_in[31:0]
+addSignal -h 15 -holdScope b_imm_in[31:0]
+addSignal -h 15 -holdScope s_imm_in[31:0]
+addSignal -h 15 -holdScope j_imm_in[31:0]
+addSignal -h 15 -holdScope reg_data_2_in[31:0]
+addSignal -h 15 -holdScope data_from_exmem_in[31:0]
+addSignal -h 15 -holdScope data_from_memwb_in[31:0]
+addSignal -h 15 -holdScope pc_reg_in[31:0]
+addGroup "G4"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

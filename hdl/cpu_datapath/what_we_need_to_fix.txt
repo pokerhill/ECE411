@@ -1,0 +1,14 @@
+Updates: 
+Notes:
+
+give priority to d_cache becuaes of edge case that has to do with read after load stall
+
+forwading doesn't take care of: 
+	auipc, go through every instruction and make sure you are taking into account all the values
+
+need to do stalling
+
+
+one instruction don't need to do read after ld stall:
+str instructions
+need a forwarding from output of mux to output of cache
