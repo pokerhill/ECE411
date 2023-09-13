@@ -1,0 +1,172 @@
+Warning: There are 11 switching activity information conflicts. (PWR-19)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Invalid switching activity annotation on constant net(s) is being ignored. (PWR-421)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort high
+Design : mp4
+Version: R-2020.09-SP4
+Date   : Fri Dec  9 20:59:37 2022
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /class/ece411/freepdk-45nm/stdcells.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+mp4                    5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+mp4                                    3.96e+03 2.58e+04 5.92e+06 3.57e+04 100.0
+  FWD_UNIT (forwardingunit)               7.525    7.298 1.87e+03   16.689   0.0
+  WB_STAGE (writeback_stage)              6.937    6.146 6.66e+03   19.740   0.1
+  MEM_WB (mem_wb)                        64.093  176.192 1.28e+04  253.071   0.7
+  MEM_BB (memory_blkbox)               2.39e+03 8.07e+03 3.17e+06 1.36e+04  38.2
+    CA_ADPT (cacheline_adaptor)          11.965   44.707 1.91e+04   75.780   0.2
+      fsm (f_s_m)                      6.09e-02    1.392 1.56e+03    3.015   0.0
+    EIGHTWAY_L2 (modular_cache)        1.58e+03 7.03e+03 2.16e+06 1.08e+04  30.2
+      datapath (modular_cache_datapath)
+                                       1.58e+03 7.02e+03 2.16e+06 1.08e+04  30.1
+        w8 (modular_data_array_0)       178.822  766.655 2.23e+05 1.17e+03   3.3
+        w7 (modular_data_array_1)       169.119  864.335 2.20e+05 1.25e+03   3.5
+        w6 (modular_data_array_2)       158.800  828.599 2.19e+05 1.21e+03   3.4
+        w5 (modular_data_array_3)       215.495  730.346 2.33e+05 1.18e+03   3.3
+        w4 (modular_data_array_4)       176.263  806.639 2.26e+05 1.21e+03   3.4
+        w3 (modular_data_array_5)       183.374  896.902 2.27e+05 1.31e+03   3.7
+        w2 (modular_data_array_6)       157.077  822.175 2.18e+05 1.20e+03   3.4
+        w1 (modular_data_array_7)       184.961  823.119 2.26e+05 1.23e+03   3.5
+        PLRU_array (modular_array_s_index3_width7)
+                                          7.632   31.813 7.97e+03   47.410   0.1
+        tag_array8 (modular_array_s_index3_width24_0)
+                                         13.517   50.391 2.31e+04   87.048   0.2
+        tag_array7 (modular_array_s_index3_width24_1)
+                                         13.259   49.322 2.25e+04   85.131   0.2
+        tag_array6 (modular_array_s_index3_width24_2)
+                                         15.218   51.255 2.20e+04   88.503   0.2
+        tag_array5 (modular_array_s_index3_width24_3)
+                                         12.609   50.135 2.17e+04   84.494   0.2
+        tag_array4 (modular_array_s_index3_width24_4)
+                                         13.099   50.780 2.20e+04   85.892   0.2
+        tag_array3 (modular_array_s_index3_width24_5)
+                                         12.612   49.656 2.16e+04   83.917   0.2
+        tag_array2 (modular_array_s_index3_width24_6)
+                                         14.923   44.098 2.23e+04   81.271   0.2
+        tag_array1 (modular_array_s_index3_width24_7)
+                                         13.931   40.475 2.20e+04   76.432   0.2
+        valid_array_8 (modular_array_s_index3_width1_0)
+                                          0.660    3.478 1.86e+03    6.001   0.0
+        valid_array_7 (modular_array_s_index3_width1_1)
+                                          0.642    2.614 1.85e+03    5.104   0.0
+        valid_array_6 (modular_array_s_index3_width1_2)
+                                          0.757    3.285 1.86e+03    5.905   0.0
+        valid_array_5 (modular_array_s_index3_width1_3)
+                                          0.764    3.259 1.89e+03    5.909   0.0
+        valid_array_4 (modular_array_s_index3_width1_4)
+                                          0.752    3.458 1.88e+03    6.085   0.0
+        valid_array_3 (modular_array_s_index3_width1_5)
+                                          0.730    2.587 1.86e+03    5.181   0.0
+        valid_array_2 (modular_array_s_index3_width1_6)
+                                          0.684    2.873 1.83e+03    5.386   0.0
+        valid_array_1 (modular_array_s_index3_width1_7)
+                                          0.665    2.647 1.83e+03    5.142   0.0
+        dirty_bit_array_way_8 (modular_array_s_index3_width1_8)
+                                          0.395    2.093 1.80e+03    4.289   0.0
+        dirty_bit_array_way_7 (modular_array_s_index3_width1_9)
+                                          0.397    3.501 1.79e+03    5.689   0.0
+        dirty_bit_array_way_6 (modular_array_s_index3_width1_10)
+                                          0.398    2.684 1.81e+03    4.892   0.0
+        dirty_bit_array_way_5 (modular_array_s_index3_width1_11)
+                                          0.349    3.158 1.68e+03    5.192   0.0
+        dirty_bit_array_way_4 (modular_array_s_index3_width1_12)
+                                          0.469    3.548 1.79e+03    5.807   0.0
+        dirty_bit_array_way_3 (modular_array_s_index3_width1_13)
+                                          0.453    3.544 1.77e+03    5.766   0.0
+        dirty_bit_array_way_2 (modular_array_s_index3_width1_14)
+                                          0.402    2.750 1.81e+03    4.961   0.0
+        dirty_bit_array_way_1 (modular_array_s_index3_width1_15)
+                                          0.393    3.544 1.76e+03    5.693   0.0
+      control (modular_cache_control)     2.937    4.376 3.46e+03   10.773   0.0
+    ARBITER (arbiter)                     9.145    7.479 1.87e+04   35.303   0.1
+    D_CACHE (twowayl1_cache_0)          470.297  524.383 4.90e+05 1.49e+03   4.2
+      L1_bus_adapter (twowayl1_bus_adapter_0)
+                                         19.779    6.133 4.77e+03   30.681   0.1
+      L1_datapath (twowayl1_cache_datapath_0)
+                                        443.638  514.237 4.84e+05 1.44e+03   4.0
+        w2 (twowayl1_data_array_0)      189.978  256.101 1.95e+05  640.692   1.8
+        w1 (twowayl1_data_array_1)      155.160  150.375 1.92e+05  497.937   1.4
+        tag_array2 (twowayl1_array_s_index3_width24_0)
+                                         22.940   34.608 2.30e+04   80.523   0.2
+        tag_array1 (twowayl1_array_s_index3_width24_1)
+                                         22.605   33.606 2.26e+04   78.766   0.2
+        LRU_array (twowayl1_array_s_index3_width1_0)
+                                          3.473    4.407 1.68e+03    9.563   0.0
+        valid_array_2 (twowayl1_array_s_index3_width1_1)
+                                          3.645    4.827 1.67e+03   10.139   0.0
+        valid_array_1 (twowayl1_array_s_index3_width1_2)
+                                          3.178    4.389 1.60e+03    9.169   0.0
+        dirty_bit_array_way_2 (twowayl1_array_s_index3_width1_3)
+                                          3.136    4.361 1.70e+03    9.198   0.0
+        dirty_bit_array_way_1 (twowayl1_array_s_index3_width1_4)
+                                          3.121    3.915 1.69e+03    8.723   0.0
+      L1_control (twowayl1_cache_control_0)
+                                          6.878    4.013 1.15e+03   12.038   0.0
+    I_CACHE (twowayl1_cache_1)          312.871  467.426 4.74e+05 1.25e+03   3.5
+      L1_bus_adapter (twowayl1_bus_adapter_1)
+                                         32.658   20.567 5.01e+03   58.238   0.2
+      L1_datapath (twowayl1_cache_datapath_1)
+                                        276.547  444.908 4.68e+05 1.19e+03   3.3
+        w2 (twowayl1_data_array_2)      118.003  188.112 2.06e+05  511.925   1.4
+        w1 (twowayl1_data_array_3)      117.897  188.991 2.05e+05  512.312   1.4
+        tag_array2 (twowayl1_array_s_index3_width24_2)
+                                          7.057   14.796 2.05e+04   42.384   0.1
+        tag_array1 (twowayl1_array_s_index3_width24_3)
+                                          7.060   14.955 2.05e+04   42.532   0.1
+        LRU_array (twowayl1_array_s_index3_width1_5)
+                                          4.545   10.479 1.67e+03   16.697   0.0
+        valid_array_2 (twowayl1_array_s_index3_width1_6)
+                                          1.630    3.641 1.69e+03    6.958   0.0
+        valid_array_1 (twowayl1_array_s_index3_width1_7)
+                                          1.666    3.634 1.68e+03    6.976   0.0
+      L1_control (twowayl1_cache_control_1)
+                                          3.667    1.951  403.955    6.021   0.0
+  MEM_STAGE (mem_stage)                  10.362    5.694 6.22e+03   22.278   0.1
+    BR_CHECKER (static_nt_predictor)      0.905    0.543  294.314    1.742   0.0
+  EX_MEM (ex_mem)                        87.232  202.528 1.45e+04  304.302   0.9
+  EXECUTE (execute)                     128.317   88.262 4.37e+04  260.324   0.7
+    cmp (cmp)                             6.887    7.835 4.39e+03   19.107   0.1
+    alu (alu)                            71.938   57.324 2.23e+04  151.513   0.4
+  ID_EX (id_ex)                          31.434   63.330 1.71e+04  111.905   0.3
+  INSTR_DECODE (instr_decode)           109.377  180.597 1.18e+05  407.625   1.1
+    stall (stall)                         1.993    3.195  509.588    5.698   0.0
+    WRDGEN (WordGenerator)               13.620   16.076 2.40e+03   32.093   0.1
+    regfile (regfile)                    84.583  157.433 1.14e+05  355.877   1.0
+  IF_ID (if_id)                          36.838   96.361 6.79e+03  139.986   0.4
+  INSTR_FETCH (instr_fetch)            1.08e+03 1.69e+04 2.52e+06 2.05e+04  57.5
+    BR_PREDICTOR (br_pred_blkbox)      1.03e+03 1.69e+04 2.51e+06 2.04e+04  57.2
+      META_PRED (meta_pred)              97.174 1.58e+03 2.11e+05 1.88e+03   5.3
+      LBR_PRED (local_br_pred)          597.833 1.25e+04 1.86e+06 1.49e+04  41.8
+      GBR_PRED (global_br_pred)         338.408 2.82e+03 4.35e+05 3.59e+03  10.1
+    PC (pc_register)                     22.291   44.054 3.31e+03   69.657   0.2
+1
